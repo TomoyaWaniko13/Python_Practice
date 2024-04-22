@@ -1,19 +1,18 @@
-class PlayerCharacter:
-    membership = True
-
+class Person:
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
-    @staticmethod
-    def run():
-        print('run')
+    def printname(self):
+        print(f'{self.name} + {self.age}')
 
 
-player1 = PlayerCharacter('Kevin', 35)
-player2 = PlayerCharacter('LeBron', 39)
+class Student(Person):
+    pass
 
-# print(player1)
-# print(player2)
 
-help(player1)
+student = Student('neko', 2)
+student.printname()
+x = Person('Joe', 10)
+x.printname()
+
